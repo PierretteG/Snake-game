@@ -6,7 +6,9 @@ let snake = document.querySelector('#snake');
 
 // coordinates for the position of the food
 let foodX = 0,
-    foodY = 0;
+    foodY = 0,
+    foodWidth = 20,
+    foodHeight = 20;
 
 let food = document.querySelector('#food');
 
@@ -19,9 +21,9 @@ function placeTheSnake() {
 }
 
 function placeTheFood() {
-    foodX = Math.floor(Math.random() * (window.innerWidth - 20));
-    foodY = Math.floor(Math.random() * (window.innerHeight - 20));
+    foodX = Math.floor(Math.random() * (window.innerWidth - foodWidth));
+    foodY = Math.floor(Math.random() * (window.innerHeight - foodHeight));
 
     food.style.left = foodX + 'px';
-    food.style.right = foodY + 'px';
+    food.style.top = foodY + 'px';
 }

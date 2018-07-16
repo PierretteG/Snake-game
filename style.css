@@ -1,12 +1,13 @@
 .snake {
+    position: absolute;
     height: 20px;
-    width: 20px;
+    width:20px;
     background-color: #555;
 }
 
-
 .food {
-   height: 20px;
-   width: 20px;
-   background-color: #EE0B0B; 
+    position: absolute;
+    height:20px;
+    width:20px;
+    background-color: rgb(255, 83, 83);
 }
