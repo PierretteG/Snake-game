@@ -43,13 +43,13 @@ function moveSnake(event) {
     } else if (event.keyCode === 38) {
         snakeY -= dx;
 
-        if (snakeY = 0) {
+        if (snakeY < 0) {
             snakeY = 0;
         }
     } else if (event.keyCode === 37) {
         snakeX -= dx;
 
-        if (snakeX = 0) {
+        if (snakeX < 0) {
             snakeX = 0;
         }
     } else if (event.keyCode === 40) {
